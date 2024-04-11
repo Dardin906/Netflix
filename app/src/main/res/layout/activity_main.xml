@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0D0D"
+    android:backgroundTint="#000000"
+    tools:context=".SplashScrren">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="4dp"
+                android:background="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/netflix3" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Novidades"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FF0303"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="385dp"
+                android:layout_height="268dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ImageView1"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/shrek">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/enrolados">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/princesa">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/barbie">
+
+                    </ImageView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Filmes para Família"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+                app:layout_constraintVertical_bias="1.0"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="385dp"
+                android:layout_height="268dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/duna">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/kung">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/oppenheimer">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/donzela">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Series"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+                app:layout_constraintVertical_bias="1.0"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView3"
+                android:layout_width="385dp"
+                android:layout_height="268dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/emily">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/greys">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/lacasa">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        app:srcCompat="@drawable/teen">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
